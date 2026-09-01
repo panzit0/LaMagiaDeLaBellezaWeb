@@ -1062,3 +1062,56 @@ display: flex;
     }
 
 }
+
+
+/* ===============================
+   FORMULARIO DE OPINIÓN
+================================ */
+
+.invitacion-formulario {
+    margin-top: 30px;
+
+    padding: 30px;
+
+    background: #FCF6FF;
+
+    border-radius: 25px;
+
+    text-align: center;
+}
+
+.invitacion-formulario h3 {
+    color: #75438c;
+
+    font-size: 24px;
+
+    margin-bottom: 12px;
+}
+
+.invitacion-formulario p {
+    color: #735477;
+
+    margin-bottom: 20px;
+}
+
+.boton-formulario {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: #C58BE3;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    transition: .3s;
+}
+
+.boton-formulario:hover {
+    background: #A96ACF;
+
+    transform: translateY(-3px);
+}
