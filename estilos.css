@@ -1003,3 +1003,62 @@ display: flex;
     align-items:stretch;
 
 }
+
+/* ===============================
+   FIX: 1 PRODUCTO POR FILA EN CELULAR
+================================ */
+
+@media(max-width:700px){
+
+    .productos{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ===============================
+   MENÚ HAMBURGUESA (SOLO CELULAR)
+================================ */
+
+.menu-toggle{
+    display:none;
+    position:fixed;
+    top:15px;
+    left:15px;
+    z-index:1000;
+
+    background:#C58BE3;
+    color:white;
+    border:none;
+    font-size:24px;
+    padding:8px 14px;
+    border-radius:12px;
+    cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(180,120,210,.35);
+}
+
+@media(max-width:1000px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .menu-lateral{
+        position:fixed;
+        left:-260px;
+        top:0;
+        height:100vh;
+        width:220px;
+
+        transition:.3s;
+
+        z-index:999;
+    }
+
+    .menu-lateral.activo{
+        left:0;
+    }
+
+}
