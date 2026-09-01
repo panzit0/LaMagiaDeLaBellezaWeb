@@ -26,7 +26,7 @@
 
 <!-- MENÚ IZQUIERDO -->
 
-<aside class="menu-lateral">
+<aside class="menu-lateral" id="menuLateral">
 
 
 <img src="images/logo.png" class="logo" alt="Logo">
@@ -404,7 +404,16 @@ Cs 6
     WhatsApp
 </a>
 
+<script>
 
+document.getElementById("menuToggle").addEventListener("click", function(){
+
+    document.getElementById("menuLateral").classList.toggle("activo");
+
+});
+
+</script>
+    
 </body>
 
 </html>
