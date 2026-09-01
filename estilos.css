@@ -1,0 +1,1005 @@
+/* ===============================
+   CONFIGURACIÓN GENERAL
+================================ */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    font-family: "Arial", sans-serif;
+
+    background:#FCF6FF;
+
+    color:#54385c;
+
+}
+
+
+
+
+/* ===============================
+   ESTRUCTURA PRINCIPAL
+================================ */
+
+
+.pagina{
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+
+
+/* ===============================
+   MENÚ LATERAL
+================================ */
+
+
+.menu-lateral{
+
+    width:240px;
+
+    height:100vh;
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+
+    background:#ffffff;
+
+
+    padding:35px 20px;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+
+    box-shadow:
+    8px 0 30px rgba(180,120,210,0.15);
+
+}
+
+
+
+.logo{
+
+    width:120px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.menu-lateral h3{
+
+    text-align:center;
+
+    color:#8b55a8;
+
+    font-size:20px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.menu-lateral nav{
+
+    width:100%;
+
+}
+
+
+
+.menu-lateral a{
+
+
+    display:block;
+
+    text-decoration:none;
+
+    color:#735477;
+
+
+    padding:14px 18px;
+
+
+    margin:12px 0;
+
+
+    border-radius:25px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.menu-lateral a:hover{
+
+
+    background:#EEC5FD;
+
+    color:white;
+
+    transform:translateX(8px);
+
+
+}
+
+
+
+
+.redes{
+
+    margin-top:auto;
+
+    color:#a67bb5;
+
+    text-align:center;
+
+    font-size:14px;
+
+}
+
+
+
+
+/* ===============================
+   CONTENIDO CENTRAL
+================================ */
+
+
+.contenido{
+
+    margin-left:240px;
+
+    width:calc(100% - 500px);
+
+    padding:35px;
+
+}
+
+
+
+
+section{
+
+    background:white;
+
+
+    border-radius:35px;
+
+
+    padding:45px;
+
+
+    margin-bottom:35px;
+
+
+    box-shadow:
+
+    0 15px 40px rgba(180,120,210,.12);
+
+
+}
+
+
+
+
+
+/* ===============================
+   INICIO
+================================ */
+
+
+.inicio{
+
+
+    min-height:500px;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #ffffff,
+    #F2D9FF
+    );
+
+
+}
+
+
+
+.inicio h1{
+
+
+    font-size:55px;
+
+
+    color:#633875;
+
+
+    letter-spacing:2px;
+
+
+}
+
+
+
+.eslogan{
+
+
+    margin:25px 0;
+
+
+    font-size:22px;
+
+
+    color:#8c6699;
+
+
+}
+
+
+
+
+button{
+
+
+    border:none;
+
+
+    background:#C58BE3;
+
+
+    color:white;
+
+
+    padding:15px 35px;
+
+
+    border-radius:30px;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+.boton-descubrir {
+    display: inline-block;
+
+    background: #C58BE3;
+
+    color: white;
+
+    padding: 15px 35px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    transition: .3s;
+}
+
+.boton-descubrir:hover {
+    background: #A96ACF;
+
+    transform: scale(1.05);
+}
+
+
+button:hover{
+
+
+    background:#A96ACF;
+
+
+    transform:scale(1.05);
+
+
+}
+
+
+
+
+
+.personaje{
+
+
+    width:320px;
+
+
+    filter:drop-shadow(0 15px 15px rgba(150,80,180,.2));
+
+
+    animation:flotar 3s infinite ease-in-out;
+
+
+}
+
+
+
+@keyframes flotar{
+
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+
+}
+
+
+
+
+
+/* ===============================
+   TITULOS
+================================ */
+
+
+
+h2{
+
+
+    text-align:center;
+
+
+    color:#633875;
+
+
+    font-size:34px;
+
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+p{
+
+    line-height:1.7;
+
+}
+
+
+
+
+
+/* ===============================
+   TARJETAS MISION VISION
+================================ */
+
+
+.mini-tarjetas{
+
+
+    display:flex;
+
+
+    gap:25px;
+
+
+    margin-top:35px;
+
+
+}
+
+
+
+.mini-tarjetas div{
+
+
+    flex:1;
+
+
+    background:#FCF6FF;
+
+
+    padding:25px;
+
+
+    border-radius:25px;
+
+
+}
+
+
+
+.mini-tarjetas h3{
+
+
+    color:#a05cc5;
+
+    margin-bottom:10px;
+
+}
+
+
+
+
+/* ===============================
+   PRODUCTOS
+================================ */
+
+
+.productos{
+
+
+    display:flex;
+
+    gap:25px;
+
+
+}
+
+
+
+
+.producto{
+
+
+    flex:1;
+
+
+    background:#FCF6FF;
+
+
+    padding:25px;
+
+
+    text-align:center;
+
+
+    border-radius:30px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.producto:hover{
+
+
+    transform:translateY(-12px);
+
+
+    box-shadow:
+
+    0 15px 35px rgba(180,120,210,.25);
+
+
+}
+
+
+
+
+.producto img{
+
+
+    width:140px;
+
+
+    height:140px;
+
+
+    object-fit:contain;
+
+
+}
+
+
+
+.producto h3{
+
+
+    color:#75438c;
+
+
+    margin:15px;
+
+
+}
+
+
+
+
+.producto a{
+
+
+    display:inline-block;
+
+
+    margin-top:15px;
+
+
+    padding:10px 20px;
+
+
+    background:#EEC5FD;
+
+
+    border-radius:25px;
+
+
+    color:#633875;
+
+
+    text-decoration:none;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.producto a:hover{
+
+
+    background:#C58BE3;
+
+    color:white;
+
+
+}
+
+
+
+
+
+/* ===============================
+   GALERÍA
+================================ */
+
+
+
+.galeria{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(3,1fr);
+
+
+    gap:20px;
+
+
+}
+
+
+
+.galeria img{
+
+
+    width:100%;
+
+
+    border-radius:25px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.galeria img:hover{
+
+
+    transform:scale(1.05);
+
+
+}
+
+
+
+
+
+/* ===============================
+   PANEL DERECHO
+================================ */
+
+
+.derecha{
+
+
+    width:260px;
+
+
+    position:fixed;
+
+
+    right:20px;
+
+
+    top:35px;
+
+
+}
+
+
+
+.tarjeta-lateral{
+
+
+    background:white;
+
+
+    padding:25px;
+
+
+    border-radius:30px;
+
+
+    margin-bottom:25px;
+
+
+    box-shadow:
+
+    0 15px 35px rgba(180,120,210,.15);
+
+
+}
+
+
+
+.tarjeta-lateral h3{
+
+
+    color:#9853b8;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+/* ===============================
+   WHATSAPP
+================================ */
+
+
+
+.whatsapp{
+
+
+    position:fixed;
+
+
+    right:30px;
+
+
+    bottom:30px;
+
+
+    background:#EEC5FD;
+
+
+    color:#633875;
+
+
+    padding:15px 25px;
+
+
+    border-radius:35px;
+
+
+    text-decoration:none;
+
+
+    box-shadow:0 10px 25px rgba(180,120,210,.3);
+
+
+}
+
+
+
+
+
+/* ===============================
+   CELULAR
+================================ */
+
+
+
+@media(max-width:1000px){
+
+
+.pagina{
+
+    display:block;
+
+}
+
+
+.menu-lateral{
+
+    position:relative;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+
+
+.contenido{
+
+
+    margin-left:0;
+
+    width:100%;
+
+}
+
+
+
+.derecha{
+
+
+    position:relative;
+
+    width:auto;
+
+    right:auto;
+
+    top:auto;
+
+    padding:20px;
+
+
+}
+
+
+
+.inicio{
+
+
+    flex-direction:column;
+
+    text-align:center;
+
+
+}
+
+
+
+.personaje{
+
+    width:250px;
+
+}
+
+
+
+.productos,
+
+.mini-tarjetas{
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+.galeria{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+}
+
+
+/* ===============================
+   PAGINA DE CATEGORIA
+================================ */
+
+.categoria {
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #F2D9FF
+    );
+}
+
+.categoria h1 {
+    color: #633875;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.categoria p {
+    color: #633875;
+    font-size: 18px;
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+.boton-volver {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #EEC5FD;
+    color: #633875;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: .3s;
+}
+
+.boton-volver:hover {
+    background: #C58BE3;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+/* ===============================
+   TARJETAS DE PRODUCTOS
+================================ */
+
+.productos{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+.producto {
+    background: #FCF6FF;
+    padding: 22px;
+    text-align: center;
+    border-radius: 30px;
+display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+
+    transition:
+        transform .3s,
+        box-shadow .3s,
+        border-color .3s;
+
+
+}
+
+
+.producto:hover {
+    transform: translateY(-10px);
+
+    border-color: #EEC5FD;
+
+    box-shadow:
+        0 15px 35px rgba(180,120,210,.25);
+}
+
+
+.producto img {
+    width: 100%;
+    height: 180px;
+
+    object-fit: contain;
+
+    border-radius: 20px;
+
+    transition: transform .3s;
+}
+
+
+.producto:hover img {
+    transform: scale(1.08);
+}
+
+
+.producto h3 {
+    color: #75438c;
+
+    margin: 15px 0 8px;
+}
+
+
+.producto p {
+    color: #735477;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+
+.producto strong {
+    color: #9853b8;
+
+    font-size: 18px;
+}
+
+
+.boton-consultar {
+    display: inline-block;
+    margin-top: auto;
+    padding: 10px 20px;
+    background: #EEC5FD;
+    border-radius: 25px;
+    color: #633875;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.boton-consultar:hover {
+    background: #C58BE3;
+    color: white;
+}
+
+
+.productos{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    align-items:stretch;
+
+}
