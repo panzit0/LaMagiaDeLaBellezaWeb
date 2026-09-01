@@ -25,7 +25,7 @@
 
 <!-- MENÚ IZQUIERDO -->
 
-<aside class="menu-lateral">
+<aside class="menu-lateral" id="menuLateral">
 
 <a href="index.html#inicio">
 <img src="images/logo.png" class="logo" alt="logo">
@@ -291,6 +291,16 @@ botones.forEach(function(boton) {
 
 </script>
 
+<script>
+
+document.getElementById("menuToggle").addEventListener("click", function(){
+
+    document.getElementById("menuLateral").classList.toggle("activo");
+
+});
+
+</script>
+    
 </body>
 
 </html>
